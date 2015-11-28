@@ -30,9 +30,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func toggleButtonName(sender: UIButton) {
-        self.recordButton.select(UIButton)
-        self.recordButton.setTitle("Stop", forState: UIControlState.Selected)
-
+        if self.recordButton.selected == false {
+            self.recordButton.selected = true
+            self.recordButton.setTitle("Stop", forState: UIControlState.Selected)
+        }
+        else {
+            self.recordButton.selected = false
+            self.recordButton.setTitle("Record", forState: UIControlState.Normal)
+        }
     }
     
 
