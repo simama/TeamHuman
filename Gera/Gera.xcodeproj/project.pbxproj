@@ -482,6 +482,7 @@
 				07C17B441C09401500BA373B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C17B451C09401500BA373B /* Build configuration list for PBXNativeTarget "GeraTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				07C17B471C09401500BA373B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C17B481C09401500BA373B /* Build configuration list for PBXNativeTarget "GeraUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				07C17B4A1C09401500BA373B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

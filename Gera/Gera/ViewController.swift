@@ -17,11 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var yaValue: UILabel!
     @IBOutlet weak var zaValue: UILabel!
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var detectionModeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.recordButton.setTitle("Record", forState: UIControlState.Normal)
+        self.detectionModeButton.setTitle("Detect", forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +40,16 @@ class ViewController: UIViewController {
             self.recordButton.selected = false
             self.recordButton.setTitle("Record", forState: UIControlState.Normal)
         }
+    }
+    @IBAction func toggleButtonDetect(sender: UIButton) {
+        if self.detectionModeButton.selected == false {
+            self.detectionModeButton.selected = true
+        }
+        else {
+        //if self.detectionModeButton.selected == true {
+            self.detectionModeButton.selected = false
+        }
+
     }
     
 
