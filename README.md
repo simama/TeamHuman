@@ -1,21 +1,31 @@
-# Gera
-We are designing **Gera** to leverage device motion, and biometeric data to give real time alerts and aid our users in times of need.
-Be it a bad bike accident, a fall, or a panic attack. Gera will ask you if you are okay, and notify a local hospital otherwise.
-I calls the authorities with your GPS location, and can pass critical health information to medical professionals.
+# Current Work
+A brief overview of what's been done, and what's on my plate. 
 
-It's a tall call for a single product, and there is a lot that needs to happen to make this idea a reality. This repo is a prototype at a concept.
-Our prototype is a single fall-detector iPhone App.
+## UI Update
+- [x] Implemented second draft at recording data UI
+    I added a 2 second timer, and a toggle to switch between recording normal data, and recording a fall. 
+- [x] Added display to see num samples Normal vs Fall
 
-We break this up into 3 bodies of work.
+## Logic Update
+- [x] added logic for the timer
+- [x] Created fixed fixed size feature vectors
+- [x] Uploaded feature vectors to Parse
+- [x] Query Parse for num samples on update 
 
-## Data Collection App
-This app let's user record and produce labeled motion data for training
+## Data Update
+- [x] can now extract all data to a text file for processing
 
-## Training App
-This trains our fall detection model (given the data collection with the Data Collection App) and outputs the learned weights to an external file.
+## Issues
+- [MLPNeuralNet](https://github.com/nikolaypavlov/MLPNeuralNet/tree/master/MLPNeuralNet) is a bitch to get running as a MacOS / Terminal App
+- Compatibility issues with certain libraries being in `Objective-C` and others in `Swift`
 
-## Gera Alert App
-Tracks motion data, and notifies you if it thinks you fell. 
-
-### Who are we? 
-This work is part of an MIT entrenpeneurship experiment. The Gera is being developed by Adam Yala, Martin Simic, and Larissa Senatus. 
+## Todo
+- [ ] Train a perceptron or simple feed forward neural network to classify
+    - [ ] Break up data into 80-20 Train-Test
+    - [ ] Compute Accuracy
+    - [ ] Save weights to external file
+- [ ] Build Product App
+    - [ ] Build UI
+    - [ ] Load classifier into App with weights from that file
+    - [ ] Real-time classify and notify user
+         - Naive notification can just be text / color change. No need for push. 
