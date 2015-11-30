@@ -183,9 +183,8 @@ class ViewController: UIViewController {
         normalQuery.countObjectsInBackgroundWithBlock {
             (count: Int32, error: NSError?) -> Void in
             if error == nil {
-                print("wtf")
+                self.numFalls.text = String(count)
             }
-            self.numNormals.text = String(count)
         }
         
        let fallQuery = PFQuery(className: "Sample")
@@ -193,9 +192,8 @@ class ViewController: UIViewController {
         fallQuery.countObjectsInBackgroundWithBlock {
             (count: Int32, error: NSError?) -> Void in
             if error == nil {
-                print("wtf")
+                self.numFalls.text = String(count)
             }
-            self.numFalls.text = String(count)
         }
         
 
