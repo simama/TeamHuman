@@ -10,7 +10,7 @@ NORMAL = 0
 FALL   = 1
 
 def parseFeature(sample):
-    return sample["feature_vector"].split(" ")
+    return [ 0 if s == "" else float(s) for s in sample["feature_vector"].split(" ") ]
 
 def parseOutput(sample):
     return NORMAL if sample["sample_type"] == "Normal" else FALL
@@ -25,6 +25,6 @@ with open("raw_data.json", "r") as dataFile:
 ##
 ## Split up JSON into input features and outputs
 ##
-inputFeatures = [parseFeature(sample) for sample in labeledSamples[:2]]
-output        = [parseOutput(sample) for sample in labeledSamples[:2]]
+inputFeatures = [parseFeature(sample) for sample in labeledSamples]
+output        = [parseOutput(sample) for sample in labeledSamples]
 
