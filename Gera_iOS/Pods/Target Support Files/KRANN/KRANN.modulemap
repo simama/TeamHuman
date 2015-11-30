@@ -1,6 +1,0 @@
-framework module KRANN {
-  umbrella header "KRANN-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.1'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'Gera' do
+pod "KRANN", "~> 2.1.4"
+pod "Parse"
+end
+
+target 'GeraTests' do
+pod "KRANN", "~> 2.1.4"
+end
+
+target 'GeraUITests' do
+
+end
+
