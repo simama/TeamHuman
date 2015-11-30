@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,15 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1V-Ui-sUO">
-                                <rect key="frame" x="133" y="242" width="73" height="40"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Record"/>
-                                <connections>
-                                    <action selector="toggleButtonName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxY-NQ-LYi"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-jK-npz">
                                 <rect key="frame" x="111" y="405" width="116" height="29"/>
                                 <constraints>
@@ -41,38 +33,52 @@
                                     <action selector="selectMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="W6W-Ib-flO"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig6-fu-dUk">
-                                <rect key="frame" x="72" y="83" width="195" height="131"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig6-fu-dUk">
+                                <rect key="frame" x="72" y="38" width="195" height="145"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-SW-K91">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-SW-K91">
                                 <rect key="frame" x="111" y="456" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-g2-8hY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-g2-8hY">
                                 <rect key="frame" x="169" y="456" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1V-Ui-sUO">
+                                <rect key="frame" x="133" y="247" width="73" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="toggleButtonName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxY-NQ-LYi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ig6-fu-dUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9.5" id="62F-Z0-qy7"/>
+                            <constraint firstItem="ukf-g2-8hY" firstAttribute="top" secondItem="nAK-jK-npz" secondAttribute="bottom" constant="23" id="9lH-aj-e5Y"/>
                             <constraint firstItem="ig6-fu-dUk" firstAttribute="centerX" secondItem="a1V-Ui-sUO" secondAttribute="centerX" id="IgU-sM-K9A"/>
-                            <constraint firstItem="ig6-fu-dUk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="Mte-cp-5tS"/>
+                            <constraint firstItem="ig6-fu-dUk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Mte-cp-5tS"/>
                             <constraint firstItem="nAK-jK-npz" firstAttribute="centerX" secondItem="a1V-Ui-sUO" secondAttribute="centerX" id="P85-91-mIW"/>
                             <constraint firstItem="ukf-g2-8hY" firstAttribute="centerY" secondItem="xkh-SW-K91" secondAttribute="centerY" id="PeK-7p-OKE"/>
                             <constraint firstItem="a1V-Ui-sUO" firstAttribute="top" secondItem="ig6-fu-dUk" secondAttribute="bottom" constant="28" id="QbI-6c-oBT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nAK-jK-npz" secondAttribute="bottom" constant="101" id="V3Z-X2-bcS"/>
+                            <constraint firstItem="xkh-SW-K91" firstAttribute="centerY" secondItem="ukf-g2-8hY" secondAttribute="centerY" id="fbj-2i-wJN"/>
                             <constraint firstItem="a1V-Ui-sUO" firstAttribute="leading" secondItem="ig6-fu-dUk" secondAttribute="leading" constant="61" id="jIc-IE-FJs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ukf-g2-8hY" secondAttribute="trailing" constant="73" id="k0o-29-VSs"/>
+                            <constraint firstItem="xkh-SW-K91" firstAttribute="top" secondItem="nAK-jK-npz" secondAttribute="bottom" constant="23" id="sK9-Zz-FCZ"/>
                             <constraint firstItem="nAK-jK-npz" firstAttribute="centerY" secondItem="ig6-fu-dUk" secondAttribute="centerY" constant="304.5" id="yXW-xj-I83"/>
                             <constraint firstItem="nAK-jK-npz" firstAttribute="centerX" secondItem="a1V-Ui-sUO" secondAttribute="centerX" id="ywF-6R-DqF"/>
+                            <constraint firstItem="xkh-SW-K91" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="zhi-P0-jlA"/>
                         </constraints>
                     </view>
                     <connections>

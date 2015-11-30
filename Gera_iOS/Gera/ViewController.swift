@@ -164,8 +164,15 @@ class ViewController: UIViewController {
         
         //Store sample info
         data["sample_type"] = sampleMode
-        data["motion_data"] = String(motionData)
         data["vector_size"] = motionData.count
+        assert(numFeatures == motionData.count)
+        var motionDataString = ""
+        
+        for i in motionData.startIndex...(motionData.endIndex-1) {
+            motionDataString += " " + format(String(motionData[i]))
+        }
+        data["feature_vector"] = motionDataString
+
         
         //Save data point
         data.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
@@ -199,8 +206,19 @@ class ViewController: UIViewController {
 
     }
     
-    func updateCountLabels() {
-        
+    func format(original: String) -> String{
+        var startIndex = original.startIndex
+        var endIndex = original.endIndex
+        for var i = original.startIndex; i < original.endIndex; ++i {
+            if original[i] == "(" {
+                startIndex = i.successor()
+            }
+            if original[i] == ")" {
+                endIndex = i
+            }
+            
+        }
+        return original.substringWithRange(Range(start: startIndex, end: endIndex));
     }
 
 }
