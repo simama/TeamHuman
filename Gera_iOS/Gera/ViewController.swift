@@ -8,23 +8,28 @@
 
 import UIKit
 import CoreMotion
+import KRANN
+import Parse
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet var TimeText: UILabel!
     
-    let updateRate : NSTimeInterval = 1 //0.02
+    let updateRate : NSTimeInterval = 0.02
     let manager = CMMotionManager()
     let queue = NSOperationQueue.mainQueue()
     let maxTime = 200;
+    var data = PFObject(className: "Sample")
+    let numFeatures = 1920
     
     var sampleMode = "Normal"
     var accelerometerUpdateInterval: NSTimeInterval = 0.05
     var gyroUpdateInterval: NSTimeInterval = 0.05
     var motionUpdateInterval: NSTimeInterval = 0.05
-    var timer: NSTimer = NSTimer();
-    var counter = 0;
+    var timer: NSTimer = NSTimer()
+    var counter = 0
+    var rawData = [Double?]()
 
 
     
@@ -50,24 +55,15 @@ class ViewController: UIViewController {
      **/
     @IBAction func toggleButtonName(sender: UIButton) {
         if  self.recordButton.selected  {
-            stopRecording()
+            stopRecording(false)
         }
         else {
-            //Start Timer
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target:self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
-            TimeText.text = "0.0"
-            
-            //Update Button State
-            self.recordButton.selected = true
-            self.recordButton.setTitle("Stop", forState: UIControlState.Selected)
-
-            //Record Data
             startRecording()
         }
     }
     
     /**
-    **
+    ** Keep track of the time and stop recording at maxTime
     **/
     func updateTimer() {
         counter++;
@@ -81,10 +77,7 @@ class ViewController: UIViewController {
 
                 TimeText.text = String(counter / 100) + "." + String(counter % 100) + tail
                 if (counter >= maxTime) {
-                    stopRecording()
-                    //TODO: Write that shit to the file
-                    //TRIM_DATA to fixed size
-
+                    stopRecording(true)
                 }
             }
         }
@@ -101,32 +94,48 @@ class ViewController: UIViewController {
         else {
             sampleMode = "Normal"
         }
-        print(sampleMode)
     }
     
     
     func startRecording() {
-        manager.startAccelerometerUpdatesToQueue(queue) {
-            (data, error) in
-            print("ACCEL DATA")
-            print(data)
-            print("-------------------")
-        }
-        manager.startGyroUpdatesToQueue(queue) {
-            (data, error) in
-            print("GYRO DATA")
-            print(data)
-            print("__________________")
-        }
+        //Start Timer
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target:self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        TimeText.text = "0.0"
+        
+        //Update Button State
+        self.recordButton.selected = true
+        self.recordButton.setTitle("Stop", forState: UIControlState.Selected)
+        
+        //Record Data
+        self.rawData = []
+
         manager.startDeviceMotionUpdatesToQueue(queue) {
             (data, error) in
-            print("MOTION DATA")
-            print(data)
-            print("_________________")
+
+            let roll = data?.attitude.roll
+            let pitch = data?.attitude.yaw
+            let yaw = data?.attitude.pitch
+
+            let gx = data?.gravity.x
+            let gy = data?.gravity.y
+            let gz = data?.gravity.z
+            
+            let accelX = data?.userAcceleration.x
+            let accelY = data?.userAcceleration.y
+            let accelZ = data?.userAcceleration.z
+            
+            let rotX = data?.rotationRate.x
+            let rotY = data?.rotationRate.y
+            let rotZ = data?.rotationRate.z
+
+            
+            self.rawData.appendContentsOf( [roll, pitch, yaw, gx, gy, gz, accelX, accelY, accelZ, rotX, rotY, rotZ])
+        
         }
     }
     
-    func stopRecording() {
+    func stopRecording(saveSample : Bool) {
+        
         //Update UI
         self.recordButton.selected = false
         self.recordButton.setTitle("Start", forState: UIControlState.Normal)
@@ -134,14 +143,37 @@ class ViewController: UIViewController {
         //Stop Timer
         timer.invalidate()
         counter = 0
-        //TODO: Invalidate writing that shit to text file
 
         //Stop Recoding Data
-        manager.stopAccelerometerUpdates()
-        manager.stopGyroUpdates()
         manager.stopDeviceMotionUpdates()
+        
+        if saveSample {
+            self.saveSample()
+        }
+
+
+        
+
     }
+
     
+    func saveSample() {
+        //Truncate data streams to the right length
+        let motionData = self.rawData.suffix(numFeatures)
+        
+        //Store sample info
+        data["sample_type"] = sampleMode
+        data["motion_data"] = String(motionData)
+        data["vector_size"] = motionData.count
+        
+        //Save data point
+        data.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            print("Object has been saved.")
+        }
+        //Create new data point
+        data = PFObject(className: "Sample")
+    }
+
 
 }
 

@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Gera/Bolts.framework"
   install_framework "Pods-Gera/KRANN.framework"
+  install_framework "Pods-Gera/Parse.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Gera/Bolts.framework"
   install_framework "Pods-Gera/KRANN.framework"
+  install_framework "Pods-Gera/Parse.framework"
 fi

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FFAA03351F74842260604EB9'
+               BlueprintIdentifier = '5E997FBE70DE1F093B15BF9D'
                BlueprintName = 'KRANN'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'KRANN.framework'>

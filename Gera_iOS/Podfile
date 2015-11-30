@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'Gera' do
 pod "KRANN", "~> 2.1.4"
+pod "Parse"
 end
 
 target 'GeraTests' do

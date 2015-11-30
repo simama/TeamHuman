@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KRANN.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>511B536F0DE06D9C3BD65397A91990C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>708E01B006A9F88B3C13711562282B5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88A240EBFB28F8A1C0436FB3D3FBCC2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A147A3024F12C612747242A586CDCFB</key>
+		<key>CB9F3E2F9A37A2F2F6C594E8688E0BEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA3410681D89287E364A1705A0C7C529</key>
+		<key>D7E9A0DE3E1AA727A69DB15014AD4146</key>
 		<dict>
 			<key>primary</key>
 			<true/>

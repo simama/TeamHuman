@@ -14,7 +14,21 @@
 		07C17B281C09401500BA373B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C17B261C09401500BA373B /* LaunchScreen.storyboard */; };
 		07C17B331C09401500BA373B /* GeraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C17B321C09401500BA373B /* GeraTests.swift */; };
 		07C17B3E1C09401500BA373B /* GeraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C17B3D1C09401500BA373B /* GeraUITests.swift */; };
-		17183619C7304912C2BB2AA7 /* Pods_Gera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF48ACE0EB535988E5A9126 /* Pods_Gera.framework */; };
+		17183619C7304912C2BB2AA7 /* Pods_Gera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF48ACE0EB535988E5A9126 /* Pods_Gera.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		34328A871C0C39C40085233E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A851C0C39C40085233E /* Bolts.framework */; };
+		34328A881C0C39C40085233E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A851C0C39C40085233E /* Bolts.framework */; };
+		34328A891C0C39C40085233E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A861C0C39C40085233E /* Parse.framework */; };
+		34328A8A1C0C39C40085233E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A861C0C39C40085233E /* Parse.framework */; };
+		34328A8C1C0C39E50085233E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A8B1C0C39E50085233E /* AudioToolbox.framework */; };
+		34328A8E1C0C39ED0085233E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A8D1C0C39ED0085233E /* CFNetwork.framework */; };
+		34328A901C0C39F20085233E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A8F1C0C39F20085233E /* CoreGraphics.framework */; };
+		34328A921C0C39F70085233E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A911C0C39F70085233E /* CoreLocation.framework */; };
+		34328A941C0C39FF0085233E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A931C0C39FF0085233E /* QuartzCore.framework */; };
+		34328A961C0C3A070085233E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A951C0C3A070085233E /* Security.framework */; };
+		34328A981C0C3A0E0085233E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A971C0C3A0E0085233E /* StoreKit.framework */; };
+		34328A9A1C0C3A1A0085233E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A991C0C3A190085233E /* SystemConfiguration.framework */; };
+		34328A9C1C0C3A200085233E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A9B1C0C3A200085233E /* libz.tbd */; };
+		34328A9E1C0C3A280085233E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34328A9D1C0C3A280085233E /* libsqlite3.tbd */; };
 		A95390D13A95CBF6BBB998CD /* Pods_GeraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CA3F630F63DD2AD139E66A /* Pods_GeraTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +64,18 @@
 		07C17B3D1C09401500BA373B /* GeraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeraUITests.swift; sourceTree = "<group>"; };
 		07C17B3F1C09401500BA373B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23DCEF48DF0725F61D47A183 /* Pods-GeraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeraTests/Pods-GeraTests.release.xcconfig"; sourceTree = "<group>"; };
+		34328A851C0C39C40085233E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		34328A861C0C39C40085233E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		34328A8B1C0C39E50085233E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		34328A8D1C0C39ED0085233E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		34328A8F1C0C39F20085233E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34328A911C0C39F70085233E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		34328A931C0C39FF0085233E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		34328A951C0C3A070085233E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		34328A971C0C3A0E0085233E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		34328A991C0C3A190085233E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		34328A9B1C0C3A200085233E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		34328A9D1C0C3A280085233E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		68B2B8CD860AAE2D15E26277 /* Pods-Gera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gera.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gera/Pods-Gera.release.xcconfig"; sourceTree = "<group>"; };
 		A6CA3F630F63DD2AD139E66A /* Pods_GeraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF48ACE0EB535988E5A9126 /* Pods_Gera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +88,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34328A9E1C0C3A280085233E /* libsqlite3.tbd in Frameworks */,
+				34328A9C1C0C3A200085233E /* libz.tbd in Frameworks */,
+				34328A9A1C0C3A1A0085233E /* SystemConfiguration.framework in Frameworks */,
+				34328A981C0C3A0E0085233E /* StoreKit.framework in Frameworks */,
+				34328A961C0C3A070085233E /* Security.framework in Frameworks */,
+				34328A941C0C39FF0085233E /* QuartzCore.framework in Frameworks */,
+				34328A921C0C39F70085233E /* CoreLocation.framework in Frameworks */,
+				34328A901C0C39F20085233E /* CoreGraphics.framework in Frameworks */,
+				34328A8E1C0C39ED0085233E /* CFNetwork.framework in Frameworks */,
+				34328A8C1C0C39E50085233E /* AudioToolbox.framework in Frameworks */,
 				17183619C7304912C2BB2AA7 /* Pods_Gera.framework in Frameworks */,
+				34328A891C0C39C40085233E /* Parse.framework in Frameworks */,
+				34328A871C0C39C40085233E /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +109,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95390D13A95CBF6BBB998CD /* Pods_GeraTests.framework in Frameworks */,
+				34328A8A1C0C39C40085233E /* Parse.framework in Frameworks */,
+				34328A881C0C39C40085233E /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +127,8 @@
 		07C17B111C09401500BA373B = {
 			isa = PBXGroup;
 			children = (
+				34328A851C0C39C40085233E /* Bolts.framework */,
+				34328A861C0C39C40085233E /* Parse.framework */,
 				07C17B1C1C09401500BA373B /* Gera */,
 				07C17B311C09401500BA373B /* GeraTests */,
 				07C17B3C1C09401500BA373B /* GeraUITests */,
@@ -151,6 +193,16 @@
 		8A8E20CDAF85CAAF8F533D19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34328A9D1C0C3A280085233E /* libsqlite3.tbd */,
+				34328A9B1C0C3A200085233E /* libz.tbd */,
+				34328A991C0C3A190085233E /* SystemConfiguration.framework */,
+				34328A971C0C3A0E0085233E /* StoreKit.framework */,
+				34328A951C0C3A070085233E /* Security.framework */,
+				34328A931C0C39FF0085233E /* QuartzCore.framework */,
+				34328A911C0C39F70085233E /* CoreLocation.framework */,
+				34328A8F1C0C39F20085233E /* CoreGraphics.framework */,
+				34328A8D1C0C39ED0085233E /* CFNetwork.framework */,
+				34328A8B1C0C39E50085233E /* AudioToolbox.framework */,
 				ABF48ACE0EB535988E5A9126 /* Pods_Gera.framework */,
 				A6CA3F630F63DD2AD139E66A /* Pods_GeraTests.framework */,
 			);
@@ -304,7 +356,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gera/Pods-Gera-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		5A12ED6E7342CB400ECCA775 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -532,6 +583,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR),",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Gera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.human.Gera;
@@ -547,6 +603,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR),",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Gera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.human.Gera;
@@ -560,6 +621,10 @@
 			baseConfigurationReference = DEC08E65D0F8D8CB5FD000EE /* Pods-GeraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GeraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.human.GeraTests;
@@ -573,6 +638,10 @@
 			baseConfigurationReference = 23DCEF48DF0725F61D47A183 /* Pods-GeraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GeraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.human.GeraTests;
@@ -596,6 +665,7 @@
 		};
 		07C17B4A1C09401500BA373B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DCEF48DF0725F61D47A183 /* Pods-GeraTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GeraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
