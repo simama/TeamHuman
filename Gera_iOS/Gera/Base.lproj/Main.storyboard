@@ -27,8 +27,8 @@
                                     <action selector="toggleButtonName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxY-NQ-LYi"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-jK-npz">
-                                <rect key="frame" x="112" y="439" width="116" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-jK-npz">
+                                <rect key="frame" x="111" y="405" width="116" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nAK-jK-npz" secondAttribute="height" multiplier="29:7" id="Rhf-Hq-SGL"/>
                                     <constraint firstAttribute="width" constant="116" id="pPp-j0-6FP"/>
@@ -47,6 +47,18 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-SW-K91">
+                                <rect key="frame" x="111" y="456" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-g2-8hY">
+                                <rect key="frame" x="169" y="456" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -55,6 +67,7 @@
                             <constraint firstItem="ig6-fu-dUk" firstAttribute="centerX" secondItem="a1V-Ui-sUO" secondAttribute="centerX" id="IgU-sM-K9A"/>
                             <constraint firstItem="ig6-fu-dUk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="Mte-cp-5tS"/>
                             <constraint firstItem="nAK-jK-npz" firstAttribute="centerX" secondItem="a1V-Ui-sUO" secondAttribute="centerX" id="P85-91-mIW"/>
+                            <constraint firstItem="ukf-g2-8hY" firstAttribute="centerY" secondItem="xkh-SW-K91" secondAttribute="centerY" id="PeK-7p-OKE"/>
                             <constraint firstItem="a1V-Ui-sUO" firstAttribute="top" secondItem="ig6-fu-dUk" secondAttribute="bottom" constant="28" id="QbI-6c-oBT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nAK-jK-npz" secondAttribute="bottom" constant="101" id="V3Z-X2-bcS"/>
                             <constraint firstItem="a1V-Ui-sUO" firstAttribute="leading" secondItem="ig6-fu-dUk" secondAttribute="leading" constant="61" id="jIc-IE-FJs"/>
@@ -64,6 +77,8 @@
                     </view>
                     <connections>
                         <outlet property="TimeText" destination="ig6-fu-dUk" id="SD9-iy-a5d"/>
+                        <outlet property="numFalls" destination="ukf-g2-8hY" id="8yR-Gd-vSH"/>
+                        <outlet property="numNormals" destination="xkh-SW-K91" id="xx3-9S-fin"/>
                         <outlet property="recordButton" destination="a1V-Ui-sUO" id="BvU-vo-ZlI"/>
                     </connections>
                 </viewController>

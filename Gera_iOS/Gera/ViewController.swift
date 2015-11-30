@@ -13,9 +13,12 @@ import Parse
 
 class ViewController: UIViewController {
 
+    @IBOutlet var numberNormal: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet var TimeText: UILabel!
-    
+    @IBOutlet var numNormals: UILabel!
+    @IBOutlet var numFalls: UILabel!
+
     let updateRate : NSTimeInterval = 0.02
     let manager = CMMotionManager()
     let queue = NSOperationQueue.mainQueue()
@@ -30,6 +33,8 @@ class ViewController: UIViewController {
     var timer: NSTimer = NSTimer()
     var counter = 0
     var rawData = [Double?]()
+    
+
 
 
     
@@ -38,9 +43,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.recordButton.setTitle("Record", forState: UIControlState.Normal)
-        accelerometerUpdateInterval = updateRate
-        gyroUpdateInterval = updateRate
         motionUpdateInterval = updateRate
+        updateCounts()
         
     }
 
@@ -150,10 +154,7 @@ class ViewController: UIViewController {
         if saveSample {
             self.saveSample()
         }
-
-
-        
-
+        updateCounts()
     }
 
     
@@ -173,7 +174,36 @@ class ViewController: UIViewController {
         //Create new data point
         data = PFObject(className: "Sample")
     }
+    
+    func updateCounts() {
+        PFQuery.clearAllCachedResults()
+      
+        let normalQuery = PFQuery(className: "Sample")
+        normalQuery.whereKey("sample_type", equalTo: "Normal")
+        normalQuery.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                print("wtf")
+            }
+            self.numNormals.text = String(count)
+        }
+        
+       let fallQuery = PFQuery(className: "Sample")
+        fallQuery.whereKey("sample_type", equalTo: "Fall")
+        fallQuery.countObjectsInBackgroundWithBlock {
+            (count: Int32, error: NSError?) -> Void in
+            if error == nil {
+                print("wtf")
+            }
+            self.numFalls.text = String(count)
+        }
+        
 
+    }
+    
+    func updateCountLabels() {
+        
+    }
 
 }
 
