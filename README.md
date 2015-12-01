@@ -20,10 +20,10 @@ A brief overview of what's been done, and what's on my plate.
 - Compatibility issues with certain libraries being in `Objective-C` and others in `Swift`
 
 ## Todo
-- [ ] Train a perceptron or simple feed forward neural network to classify
+- [x] Train a perceptron or simple feed forward neural network to classify
     - [x] Break up data into 80-20 Train-Test
     - [x] Compute Accuracy
-    - [ ] Save weights to external file
+    - [x] Save weights to external file
 - [ ] Build Product App
     - [ ] Build UI
     - [ ] Load classifier into App with weights from that file
