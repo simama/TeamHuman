@@ -21,8 +21,8 @@ A brief overview of what's been done, and what's on my plate.
 
 ## Todo
 - [ ] Train a perceptron or simple feed forward neural network to classify
-    - [ ] Break up data into 80-20 Train-Test
-    - [ ] Compute Accuracy
+    - [x] Break up data into 80-20 Train-Test
+    - [x] Compute Accuracy
     - [ ] Save weights to external file
 - [ ] Build Product App
     - [ ] Build UI
