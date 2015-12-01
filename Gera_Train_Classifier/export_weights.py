@@ -2,37 +2,50 @@ import numpy as np
 import sys
 import pickle as pkl
 
-def layer_names(params):
-    layer_names = params.keys()
-
-#     print layer_names
-#     print layer_names[0]
-#     print params[layer_names[0]]
-#     print layer_names[1]
-#     print params[layer_names[1]]
-    
-    layer_names.remove('epoch_index')
-    # Sort layers by their appearance in the model architecture
-    # Since neon appands the index to the layer name we will use it to sort
-    layer_names.sort(key=lambda x: int(x.split("_")[-1]))
-    return layer_names
-
-def getweights(file_name):
+##
+## Parse pkl file (outputed from Python Neon) into weight vector
+##
+def getweights(file_name, verbose=False, debug = False):
     vec = []
     # Load a stored model file from disk (should have extension prm)
     params = pkl.load(open(file_name, 'r'))    
-    #layers = layer_names(params)
-    print params
 
-#     for layer in layers:
-#         # Make sure our model has biases activated, otherwise add zeros here
-#         b = params[layer]['biases']
-#         w = params[layer]['weights']
+    weights = []
+    
+    for i in range(2):
+        layer_index = i
+        layer = params['layer_params_states'][layer_index]
+        query = layer['params']['W'] 
+        name = layer['params']['name']
+        
+        if(debug):
+            print "Layer " , name
+            print "Layer len()" , len(layer)
+            print "Num states ", len(layer["states"][0])
+            print "Width of state",len(layer["states"][0][0])
+            print "Num weights", len(query)
+            print "Width weights", len(query[0])
+            print query
+        
+        for node in query:
+            weights.extend(node)
+    if(verbose):
+        print "Expected num Weights:", 700*1921 + 700  * 2
+        print "Print actual num Weights", len(weights)
+        
+    return weights
 
-#         newvec = np.ravel(np.hstack((b,w)))
-#         [vec.append(nv) for nv in newvec]
-    return vec
+weights = getweights('./savefile.prm', True)
 
-# An example call
-#print 
-getweights('./savefile.prm')
+
+##
+## Write to output path in = seperater format
+##
+outputPath = "weightFile.txt"
+with open(outputPath, "w+") as outputFile:
+    for w in weights:
+        outputFile.write(str(w))
+        outputFile.write(" ")
+
+
+
