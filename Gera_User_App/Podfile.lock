@@ -1,0 +1,10 @@
+PODS:
+  - MLPNeuralNet (1.0.10)
+
+DEPENDENCIES:
+  - MLPNeuralNet (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  MLPNeuralNet: a583b8088aa150aba416deb24adc31c9a8e6813d
+
+COCOAPODS: 0.39.0

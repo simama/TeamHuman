@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gera_User_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeY-xg-my1">
+                                <rect key="frame" x="256" y="350" width="89" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Detect"/>
+                                <state key="selected" title="Stop"/>
+                                <connections>
+                                    <action selector="detectToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEi-Hv-O4o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQo-wx-b7i">
+                                <rect key="frame" x="203" y="170" width="194" height="120"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-Ut-lFc">
+                                <rect key="frame" x="280" y="448" width="16" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-f0-ttE">
+                                <rect key="frame" x="306" y="448" width="11" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yeY-xg-my1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CzB-cF-kHz"/>
+                            <constraint firstItem="cQo-wx-b7i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dbn-1o-xqa"/>
+                            <constraint firstItem="yeY-xg-my1" firstAttribute="centerX" secondItem="lwv-Ut-lFc" secondAttribute="trailing" constant="5" id="OAi-f9-vxn"/>
+                            <constraint firstItem="wIr-f0-ttE" firstAttribute="leading" secondItem="yeY-xg-my1" secondAttribute="centerX" constant="5" id="U2z-6W-A2Y"/>
+                            <constraint firstItem="wIr-f0-ttE" firstAttribute="top" secondItem="yeY-xg-my1" secondAttribute="bottom" constant="50" id="Xub-Xo-Gm5"/>
+                            <constraint firstItem="cQo-wx-b7i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="fm0-Ui-XuF"/>
+                            <constraint firstItem="yeY-xg-my1" firstAttribute="top" secondItem="cQo-wx-b7i" secondAttribute="bottom" constant="60" id="hzR-I7-tQB"/>
+                            <constraint firstItem="lwv-Ut-lFc" firstAttribute="top" secondItem="yeY-xg-my1" secondAttribute="bottom" constant="50" id="iov-7u-ebd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OkPrompt" destination="cQo-wx-b7i" id="rDx-Qh-nIS"/>
+                        <outlet property="detectButton" destination="yeY-xg-my1" id="Fjw-dP-EJZ"/>
+                        <outlet property="num" destination="wIr-f0-ttE" id="7ni-ZR-u9O"/>
+                        <outlet property="numDetections" destination="lwv-Ut-lFc" id="4xH-7t-Eg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="370"/>
+        </scene>
+    </scenes>
+</document>

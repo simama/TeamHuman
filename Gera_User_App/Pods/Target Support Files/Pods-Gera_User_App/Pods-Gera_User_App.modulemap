@@ -1,0 +1,6 @@
+framework module Pods_Gera_User_App {
+  umbrella header "Pods-Gera_User_App-umbrella.h"
+
+  export *
+  module * { export * }
+}
