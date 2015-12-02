@@ -128,7 +128,9 @@ class ViewController: UIViewController {
         
         model.predictByFeatureVector(feature_data, intoPredictionVector: prediction!)
         
+        let assesment = prediction.bytes
         
+        //print it , or w.e
     }
     
     func weightsFromResource(fileName: String) throws -> [Double] {
