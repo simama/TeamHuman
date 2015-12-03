@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,24 +27,10 @@
                                     <action selector="detectToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEi-Hv-O4o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQo-wx-b7i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQo-wx-b7i">
                                 <rect key="frame" x="203" y="170" width="194" height="120"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-Ut-lFc">
-                                <rect key="frame" x="280" y="448" width="16" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-f0-ttE">
-                                <rect key="frame" x="306" y="448" width="11" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,19 +40,13 @@
                         <constraints>
                             <constraint firstItem="yeY-xg-my1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CzB-cF-kHz"/>
                             <constraint firstItem="cQo-wx-b7i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dbn-1o-xqa"/>
-                            <constraint firstItem="yeY-xg-my1" firstAttribute="centerX" secondItem="lwv-Ut-lFc" secondAttribute="trailing" constant="5" id="OAi-f9-vxn"/>
-                            <constraint firstItem="wIr-f0-ttE" firstAttribute="leading" secondItem="yeY-xg-my1" secondAttribute="centerX" constant="5" id="U2z-6W-A2Y"/>
-                            <constraint firstItem="wIr-f0-ttE" firstAttribute="top" secondItem="yeY-xg-my1" secondAttribute="bottom" constant="50" id="Xub-Xo-Gm5"/>
                             <constraint firstItem="cQo-wx-b7i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="fm0-Ui-XuF"/>
                             <constraint firstItem="yeY-xg-my1" firstAttribute="top" secondItem="cQo-wx-b7i" secondAttribute="bottom" constant="60" id="hzR-I7-tQB"/>
-                            <constraint firstItem="lwv-Ut-lFc" firstAttribute="top" secondItem="yeY-xg-my1" secondAttribute="bottom" constant="50" id="iov-7u-ebd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="OkPrompt" destination="cQo-wx-b7i" id="rDx-Qh-nIS"/>
                         <outlet property="detectButton" destination="yeY-xg-my1" id="Fjw-dP-EJZ"/>
-                        <outlet property="num" destination="wIr-f0-ttE" id="7ni-ZR-u9O"/>
-                        <outlet property="numDetections" destination="lwv-Ut-lFc" id="4xH-7t-Eg6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

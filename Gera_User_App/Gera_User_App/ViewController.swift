@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.detectButton.setTitle("Record", forState: UIControlState.Normal)
+        self.OkPrompt.textColor = UIColor.whiteColor()
+       
         do {
             weights = try weightsFromResource("weightFile.txt")
         }
@@ -67,6 +69,7 @@ class ViewController: UIViewController {
         //Update Button State
         self.detectButton.selected = true
         self.detectButton.setTitle("Stop", forState: UIControlState.Selected)
+        self.OkPrompt.textColor = UIColor.whiteColor()
         
         //Record Data
         self.rawData = []
@@ -129,8 +132,10 @@ class ViewController: UIViewController {
         model.predictByFeatureVector(feature_data, intoPredictionVector: prediction!)
         
         let assesment = prediction.bytes
-        
-        //print it , or w.e
+        if (something == something) {
+            self.OkPrompt.textColor = UIColor.blackColor()
+            stopRecording()
+        }
     }
     
     func weightsFromResource(fileName: String) throws -> [Double] {
