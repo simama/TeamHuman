@@ -132,6 +132,7 @@ class ViewController: UIViewController {
         model.predictByFeatureVector(feature_data, intoPredictionVector: prediction!)
         
         let assesment = prediction.bytes
+        print(assesment)
         if (something == something) {
             self.OkPrompt.textColor = UIColor.blackColor()
             stopRecording()
