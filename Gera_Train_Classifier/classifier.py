@@ -104,10 +104,9 @@ callbacks.add_save_best_state_callback(path)
 # run fit
 mlp.fit(train_set, optimizer=optimizer, num_epochs=15, cost=cost, callbacks=callbacks)
 
-r = (mlp.eval(valid_set, metric=Misclassification()))*100
-
-results.append((r,i))
-print('%.1f%' % r)
+result_float = (mlp.eval(valid_set, metric=Misclassification()))*100
+result_string ='%.1f%%' % result_float
+print(result_string[:-1])
 # print('Misclassification error = %.1f%%' % r)
 
 
