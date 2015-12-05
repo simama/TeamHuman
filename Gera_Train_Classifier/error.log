@@ -1,0 +1,294 @@
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
+/Users/Yala/Dropbox/Dev/TeamHuman/Gera_Train_Classifier/neon/neon/backends/nervanacpu.py:447: RuntimeWarning: overflow encountered in exp
+  "exp": lambda left: np.exp(left),
+Traceback (most recent call last):
+  File "classifier.py", line 110, in <module>
+    print('%.1f%' % r)
+ValueError: incomplete format
